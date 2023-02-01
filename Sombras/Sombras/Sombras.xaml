@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="Sombras.Sombras">
+    <Grid>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" Spacing="20">
+            <sh:Shadows CornerRadius="50" Shades="{sh:SingleShade Offset='0, 10', Opacity=0.7, Color=#009BE8}">
+                <ImageButton WidthRequest="100"
+                             HeightRequest="100"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             BackgroundColor="#009BE8"
+                             CornerRadius="50"
+                             Source="https://i.ibb.co/jwCmPN2/snorlax.png"
+                             Padding="15"/>
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0, 10', Opacity=0.7, Color=#FFC545}">
+                <Frame WidthRequest="60"
+                       HeightRequest="60"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       BackgroundColor="#FFC545"
+                       CornerRadius="15"
+                       >
+                    <Image Source="https://i.ibb.co/L04SLXV/psyduck.png" />
+
+                </Frame>
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0, 8', Opacity=0.7, Color=#FF2D36}">
+                <BoxView WidthRequest="60"
+                         HeightRequest="60"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="#FF2D36"
+                         CornerRadius="15"/>
+            </sh:Shadows>
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>
